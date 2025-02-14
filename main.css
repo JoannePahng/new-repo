@@ -1,0 +1,97 @@
+<style>
+  /* Modern Card Component Styles */
+
+  .card {
+    background: linear-gradient(135deg, #1e1e2f, #28293d);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .card__title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+  }
+
+  .card__excerpt {
+    font-size: 1.6rem;
+    color: #cfcfcf;
+    line-height: 1.6;
+  }
+
+  .card__image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .card__more {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .card__more:hover {
+    background: linear-gradient(135deg, #ff3d71, #ff6b9c);
+    border-radius: 3rem;
+    transform: scale(1.05);
+  }
+
+  .card__more:active {
+    background: linear-gradient(135deg, #c81e51, #ff5277);
+    transform: scale(0.98);
+  }
+
+  @media screen and (min-width: 1024px) {
+    .card {
+      background: linear-gradient(135deg, #161627, #202038);
+    }
+
+    .card__title {
+      font-size: 4.5rem;
+    }
+
+    .card__excerpt {
+      font-size: 1.8rem;
+    }
+  }
+
+  /* Flexbox Layout for Cards */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5vw;
+    max-width: 1200px;
+    margin: auto;
+  }
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.favorite-btn:hover {
+  color: red;
+}
